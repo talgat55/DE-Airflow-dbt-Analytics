@@ -1,0 +1,5 @@
+dbt-core==1.10.22
+dbt-postgres==1.10.0
+python-dotenv
+pandas
+faker
