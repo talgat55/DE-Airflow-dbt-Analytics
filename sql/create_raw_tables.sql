@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS raw.customers (
     country TEXT,
     city TEXT,
     registered_at TIMESTAMP NOT NULL
-)
+);
 
 CREATE TABLE IF NOT EXISTS raw.products (
     product_id BIGINT PRIMARY KEY,
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS raw.products (
     category TEXT NOT NULL,
     price NUMERIC(12, 2) NOT NULL,
     created_at TIMESTAMP NOT NULL
-)
+);
 
 CREATE TABLE IF NOT EXISTS raw.orders (
     order_id BIGINT PRIMARY KEY,
