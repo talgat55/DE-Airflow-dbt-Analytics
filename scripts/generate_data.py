@@ -42,11 +42,14 @@ def generate_products(count: int = 100) -> pd.DataFrame:
 
     rows = []
 
-    for product_id in range(1, count+ 1):
+    for product_id in range(1, count + 1):
+        word = fake.word().strip().title()
+        product_name = word or f"Product {product_id}"
+
         rows.append(
             {
                 "product_id": product_id,
-                "product_name": fake.word().title(),
+                "product_name": product_name,
                 "category": random.choice(categories),
                 "price": round(random.uniform(10, 1500), 2),
                 "created_at": fake.date_time_between(

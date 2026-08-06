@@ -1,0 +1,13 @@
+ecommerce_analytics:
+  outputs:
+    dev:
+      type: postgres
+      host: postgres
+      port: 5432
+      user: analytics_user
+      pass: analytics_pass
+      dbname: analytics_dwh
+      schema: analytics
+      threads: 4
+
+  target: dev
